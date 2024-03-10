@@ -8,6 +8,6 @@ spec:
     server: https://kubernetes.default.svc
   project: argocd
   source:
-    parth: code/kustomize-installation
+    path: code/kustomize-installation
     repoURL: https://github.com/raisreis/playground-argocd-cred.git
     targetRevision: main

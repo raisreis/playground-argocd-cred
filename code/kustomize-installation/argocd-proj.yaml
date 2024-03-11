@@ -15,9 +15,6 @@ spec:
   description: Project to configure argocd self-manage application
   destinations:
     - namespace: *
-#    - namespace: argocd
       server: https://kubernetes.default.svc
-#      server: '*'
   sourceRepos:
-#    - '*'
     - https://github.com/raisreis/playground-argocd-cred.git

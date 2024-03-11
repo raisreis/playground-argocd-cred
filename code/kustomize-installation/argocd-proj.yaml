@@ -19,4 +19,5 @@ spec:
 #      server: https://kubernetes.default.svc
       server: '*'
   sourceRepos:
-    - https://github.com/raisreis/playground-argocd-cred.git
+    - '*'
+#    - https://github.com/raisreis/playground-argocd-cred.git

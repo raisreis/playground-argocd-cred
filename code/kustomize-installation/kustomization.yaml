@@ -8,5 +8,5 @@ bases:
 resources:
   - resources/namespace.yaml
 
-patchesStrategicMerge:
-  - patches/argocd-cm.yaml
+#patchesStrategicMerge:
+#  - patches/argocd-cm.yaml

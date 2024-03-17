@@ -10,3 +10,7 @@ spec:
   source:
     path: k8s/kustomize
     repoURL: https://github.com/raisreis/playground-argocd-cred.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: false

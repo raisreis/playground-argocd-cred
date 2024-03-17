@@ -9,6 +9,7 @@ spec:
   selector:
     matchLabels:
       app: sample-app
+  strategy: {}
   template:
     metadata:
       creationTimestamp: null

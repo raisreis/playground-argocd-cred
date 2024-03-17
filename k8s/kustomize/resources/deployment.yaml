@@ -1,19 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels:
+    app: sample-app
   name: sample-app
 spec:
   replicas: 1
-  revisionHistoryLimit: 3
   selector:
     matchLabels:
       app: sample-app
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: sample-app
     spec:
       containers:
-      - command:
-        - /app/sample-app
-        image: playground:v1.0.0
+        - image: playground:v1.0.0
+          imagePullPolicy: IfNotPresent
+          name: sample-app
+          resources: {}

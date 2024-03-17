@@ -7,11 +7,11 @@ spec:
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
-  project: argocd
+  project: default
   source:
     path: k8s/kustomize
     repoURL: https://github.com/raisreis/playground-argocd-cred.git
     targetRevision: main
-  syncPolicy:
-    automated:
-      prune: false
+#  syncPolicy:
+#    automated:
+#      prune: false
